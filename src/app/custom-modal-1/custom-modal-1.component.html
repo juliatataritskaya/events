@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Start page</h1>
+      <h2>{{bodyText}}</h2>
+      <button (click)="openModal('custom-modal-1')">Open Modal 1</button>
+      <button (click)="openModal('custom-modal-2')">Open Modal 2</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="modal fade" id="custom-modal-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h1>Button 1</h1>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">LOAD</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="modal fade" id="custom-modal-2" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h1>Button 2</h1>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">LOAD</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
