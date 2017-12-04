@@ -1,14 +1,15 @@
-import {Component} from '@angular/core';
+import {Component, TemplateRef} from '@angular/core';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 
 @Component({
   templateUrl: './start-page.component.html',
   styleUrls: ['./start-page.component.scss']
 })
 export class StartPageComponent {
-  constructor() {
-  }
+  public modalRef: BsModalRef; // {1}
+  constructor(private modalService: BsModalService) {} // {2}
 
-  openModal(button) {
-    console.log($('#' + button));
+  public openModal(template: TemplateRef<any>) {
+    this.modalRef = this.modalService.show(template); // {3}
   }
 }
