@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
 
 @Injectable()
-export class StartPageService {
+export class CustomModal1Service {
 
   constructor(private http: Http) {
   }

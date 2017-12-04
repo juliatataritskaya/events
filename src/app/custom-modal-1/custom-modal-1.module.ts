@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import {StartPageService} from './start-page.service';
-import {StartPageComponent} from './start-page.component';
+import { CustomModal1Service } from './custom-modal-1.service';
+import { CustomModal1Component } from './custom-modal-1.component';
 
 @NgModule({
   imports: [
@@ -12,8 +12,8 @@ import {StartPageComponent} from './start-page.component';
     RouterModule
   ],
 
-  providers: [StartPageService],
-  declarations: [StartPageComponent]
+  providers: [CustomModal1Service],
+  declarations: []
 })
-export class StartPageModule {
+export class CustomModal1Module {
 }

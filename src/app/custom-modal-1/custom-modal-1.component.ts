@@ -1,16 +1,13 @@
 import {Component, OnInit} from '@angular/core';
 
 @Component({
-  templateUrl: './start-page.component.html',
-  styleUrls: ['./start-page.component.scss']
+  selector: 'custom-modal-1',
+  templateUrl: './custom-modal-1.component.html',
+  styleUrls: ['./custom-modal-1.component.scss']
 })
-export class StartPageComponent {
+export class CustomModal1Component{
 
-  constructor() {
-  }
+  constructor() { }
 
-  openModal(button) {
-    $('#' + button).modal();
-  }
 
 }

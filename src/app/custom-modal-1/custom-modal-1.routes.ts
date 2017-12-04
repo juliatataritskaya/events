@@ -1,12 +1,11 @@
 import { Route } from '@angular/router';
-import {StartPageComponent} from './start-page.component';
+import { CustomModal1Component } from './custom-modal-1.component';
 
 
-export const StartPageRoutes: Route[] = [
-  {path: '', redirectTo: 'start-page', pathMatch: 'full'},
+export const CustomModal1Routes: Route[] = [
+  {path: '', redirectTo: 'custom-modal-1', pathMatch: 'full'},
   {
-    path: 'start-page', component: StartPageComponent, children: [
-
+    path: 'custom-modal-1', component: CustomModal1Component, children: [
   ]
   }
 ];
